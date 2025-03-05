@@ -68,6 +68,114 @@ A modern, interactive portfolio website built with Next.js, React, and TypeScrip
    yarn build
    ```
 
+## Customizing the Portfolio
+
+All the main content of the portfolio is centralized in the `data/index.ts` file for easy customization. Here's how to modify each section:
+
+### 1. Personal Information
+
+Update the home section with your details:
+
+```typescript
+home: {
+  name: "Your Name",
+  description: "Your Tagline", // Use # for styling, _ for space, __ for dash
+  cvLink: "#contact", // Or link to your CV
+}
+```
+
+### 2. Social Links
+
+Modify the sidebar links with your social media profiles:
+
+```typescript
+sidebar: {
+  links: [
+    {
+      name: "github",
+      link: "https://github.com/yourusername",
+      icon: Github,
+    },
+    // Add or remove social links as needed
+  ];
+}
+```
+
+### 3. Projects
+
+Showcase your projects by updating the projects array:
+
+```typescript
+projects: {
+  projects: [
+    {
+      id: 1,
+      title: "Project Name",
+      description:
+        "Project description.\n\n Technologies Used: Tech1, Tech2, Tech3",
+      image: "/projects-imgs/your-image.png", // Add image to public/projects-imgs/
+      previewLink: "https://project-url.com",
+    },
+    // Add more projects
+  ];
+}
+```
+
+### 4. Technologies/Skills
+
+Customize your skills section:
+
+```typescript
+technologies: {
+  skills: [
+    {
+      id: 1,
+      name: "technology-name",
+      src: "/skills/icon.svg", // Add icon to public/skills/
+      link: "https://link-to-technology-info",
+    },
+    // Add more skills
+  ];
+}
+```
+
+### 5. Contact Information
+
+Update your contact details:
+
+```typescript
+contact: {
+  email: "your.email@domain.com",
+  name: "Your Name"
+}
+```
+
+### Image Requirements
+
+- Project images: Add to `public/projects-imgs/` (Recommended size: 1200x630px)
+- Skill icons: Add to `public/skills/` (SVG format recommended)
+- All images should be optimized for web use
+
+### Styling Notes
+
+- Use `#` before words in descriptions for special styling
+- Use `_` for spaces in specially styled text
+- Use `__` for dashes in specially styled text
+- The portfolio uses Tailwind CSS for styling - customize colors in `tailwind.config.ts`
+
+### Environment Variables
+
+After customizing, make sure to set up your environment variables in `.env.local`:
+
+```bash
+RESEND_API_KEY=your_resend_api_key # Get from https://resend.com
+GOOGLE_API_KEY=your_gemini_api_key # Get from Google Cloud Console
+```
+
+### AI Assistant Customization
+
+The AI chat assistant's responses are based on your data file content. Update the information in `data/index.ts` to ensure the AI provides accurate information about you and your work.
+
 ## Project Structure
 
 - `app/` - Next.js app directory and API routes

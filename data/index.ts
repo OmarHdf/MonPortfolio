@@ -61,15 +61,6 @@ const data = {
         image: "/projects-imgs/lukaskadela.png",
         previewLink: "https://lukaskadela.com",
       },
-      // {
-      //   id: 5,
-      //   title: "Trello Clone",
-      //   description:
-      //     "Clone of the Trello App which is a popular project management tool designed to help individuals and teams organize tasks and collaborate efficiently. It uses boards, lists, and cards to visually represent projects and tasks, making it easy to track progress and prioritize work.",
-      //   image: "/projects-imgs/trello.png",
-      //   githubLink: "https://github.com/mo-hassann/trello-app",
-      //   previewLink: "https://trello-app-v1.vercel.app",
-      // },
     ],
   },
   technologies: {
@@ -168,6 +159,7 @@ const data = {
   },
   contact: {
     email: "aga.kadela.dev@gmail.com",
+    name: "Aga Kadela",
   },
 };
 
