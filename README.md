@@ -10,21 +10,37 @@ A modern, interactive portfolio website built with Next.js, React, and TypeScrip
 - 🚀 **Interactive Code Typing Animation** - Dynamic code display with syntax highlighting
 - 💻 **Responsive Design** - Optimized for all devices from mobile to desktop
 - 🎨 **Modern UI/UX** - Clean, professional interface with smooth animations
-- 🤖 **AI Integration** - AI-powered features and chat assistant
-- 📱 **Mobile-First Approach** - Fully responsive with tailored mobile experience
 - 🌙 **Dark Mode** - Sleek dark theme for optimal viewing
+- 📧 **Contact Form** - Integrated with Resend for reliable email delivery
+- 📱 **Mobile-First Approach** - Fully responsive with tailored mobile experience
+- 🎯 **SEO Optimized** - Built-in metadata configuration
 - ⚡ **Performance Optimized** - Fast loading and smooth transitions
+- 🔄 **Loading Animations** - Smooth loading transitions with Lottie
 
 ## Tech Stack
 
 - **Framework**: Next.js
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
+- **Styling**: Tailwind CSS with CSS Variables
+- **Animations**:
+  - Framer Motion
+  - Lottie Animations
+- **Form Handling**: React Hook Form with Zod validation
+- **UI Components**:
+  - shadcn/ui
+  - Lucide React Icons
+- **Email Service**: Resend
+- **AI Integration**: Google Gemini AI
 - **Code Highlighting**: Prism React Renderer
 - **UI Components**: Custom components with shadcn/ui
 - **AI Model**: Google Gemini
 - **Deployment**: [Your deployment platform]
+
+## Development Requirements
+
+- Node.js 18+
+- npm or yarn or pnpm
+- Git
 
 ## Getting Started
 
@@ -179,15 +195,33 @@ The AI chat assistant's responses are based on your data file content. Update th
 ## Project Structure
 
 - `app/` - Next.js app directory and API routes
+  - `(main)/` - Main application routes
+  - `api/` - API endpoints for email and chat
 - `components/` - React components
   - `layout/` - Layout components (header, footer, etc.)
-  - `sections/` - Page sections (home, about, etc.)
-  - `ui/` - Reusable UI components
-- `data/` - Static data and content
+  - `sections/` - Page sections (home, about, projects, etc.)
+  - `ui/` - Reusable UI components from shadcn/ui
+- `data/` - Static data and content configuration
 - `hooks/` - Custom React hooks
-- `lib/` - Utility functions
+- `lib/` - Utility functions and shared code
 - `public/` - Static assets
-- `styles/` - Global styles
+
+  - `imgs/` - Image assets
+  - `skills/` - Skill icons
+  - `projects-imgs/` - Project screenshots
+  - `lottie/` - Lottie animation files
+
+  ## Deployment
+
+This portfolio is optimized for deployment on Vercel. To deploy:
+
+1. Fork this repository
+2. Create a new project on Vercel
+3. Connect your forked repository
+4. Add the required environment variables:
+   - `RESEND_API_KEY`
+   - `GEMINI_API_KEY`
+5. Deploy!
 
 ## Environment Variables
 
