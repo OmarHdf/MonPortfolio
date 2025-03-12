@@ -166,6 +166,10 @@ contact: {
 }
 ```
 
+### 6 Change the prompt for the AI assistant
+
+Change the prompt in the `app/api/chat/route.ts` file in the `createContextFromData` function to change the behavior of the AI assistant.
+
 ### Image Requirements
 
 - Project images: Add to `public/projects-imgs/` (Recommended size: 1200x630px)
