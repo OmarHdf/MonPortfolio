@@ -1,9 +1,21 @@
-import LoadingScreen from "@/components/loading-screen";
-import AboutSection from "@/components/sections/about";
-import ContactSection from "@/components/sections/contact";
-import HomeSection from "@/components/sections/home";
-import ProjectsSection from "@/components/sections/projects";
-import Technologies from "@/components/sections/technologies";
+import LoadingScreen from '@/components/loading-screen';
+import HomeSection from '@/components/sections/home';
+import dynamic from 'next/dynamic';
+
+const AboutSection = dynamic(() => import('@/components/sections/about'), {
+  ssr: false,
+});
+const ProjectsSection = dynamic(
+  () => import('@/components/sections/projects'),
+  { ssr: false }
+);
+const Technologies = dynamic(
+  () => import('@/components/sections/technologies'),
+  { ssr: false }
+);
+const ContactSection = dynamic(() => import('@/components/sections/contact'), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
