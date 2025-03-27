@@ -2,10 +2,11 @@
 import { Globe } from 'lucide-react';
 import ChatAssistant from './chat-assistant';
 import { ContactForm } from './contact-form';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import useCurSection from '@/hooks/use-cur-section';
 import Image from 'next/image';
+import logo from '@/public/imgs/logo.webp';
 
 export default function ContactSection() {
   const ref = useRef(null);
@@ -17,7 +18,7 @@ export default function ContactSection() {
       className='w-full flex flex-col items-center container py-32'
     >
       <Image
-        src='/imgs/logo.png'
+        src={logo}
         alt='Contact'
         width={150}
         height={150}

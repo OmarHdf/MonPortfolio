@@ -4,6 +4,8 @@ import { cn } from '@/lib/utils';
 import { File, Home, LucideSend, User } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import logo from '@/public/imgs/logo.webp';
+
 const navItems = [
   {
     id: 1,
@@ -39,7 +41,7 @@ export default function Header() {
     <div className='w-full h-12 border-b bg-muted flex items-center'>
       <div className='w-14 flex items-center justify-center flex-shrink-0 font-bold'>
         <Image
-          src='/imgs/logo.png' // Update this path to match your logo's location in the public folder
+          src={logo}
           alt='AK Logo'
           width={24}
           height={24}

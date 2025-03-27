@@ -3,7 +3,7 @@ import useCurSection from '@/hooks/use-cur-section';
 import Image from 'next/image';
 import { Fragment, useRef } from 'react';
 import { motion } from 'framer-motion';
-import agakadela from '@/public/imgs/agakadela_mini.jpg';
+import agakadela from '@/public/imgs/agakadela_mini.webp';
 
 export default function AboutSection() {
   const ref = useRef(null);

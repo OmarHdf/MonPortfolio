@@ -2,7 +2,14 @@ import type { Metadata } from 'next';
 import { Fira_Code } from 'next/font/google';
 import './globals.css';
 
-const firaCode = Fira_Code({ subsets: ['latin'] });
+// Optimize font loading by specifying only the subsets and display type needed
+const firaCode = Fira_Code({
+  subsets: ['latin'],
+  display: 'swap', // Use swap to prevent layout shifts
+  preload: true,
+  weight: ['400', '500', '600'],
+  variable: '--font-fira-code',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://agakadela.com'),
@@ -39,7 +46,7 @@ export const metadata: Metadata = {
       'Full Stack Product Engineer specializing in Next.js, React, and AI Integration. Building high-performance web applications.',
     images: [
       {
-        url: '/imgs/website.png',
+        url: '/imgs/website.webp',
         width: 1200,
         height: 630,
         alt: 'Aga Kadela - Full Stack Product Engineer',
@@ -51,7 +58,7 @@ export const metadata: Metadata = {
     title: 'Aga Kadela | Full Stack Product Engineer',
     description:
       'Full Stack Product Engineer specializing in Next.js, React, and AI Integration',
-    images: ['/imgs/website.png'],
+    images: ['/imgs/website.webp'],
     creator: '@agakadela',
   },
   robots: {
@@ -69,8 +76,8 @@ export const metadata: Metadata = {
     canonical: 'https://agakadela.com',
   },
   icons: {
-    icon: '/imgs/logo.png',
-    apple: '/imgs/logo.png',
+    icon: '/imgs/logo.webp',
+    apple: '/imgs/logo.webp',
   },
 };
 
@@ -81,7 +88,10 @@ export default function RootLayout({
 }>) {
   return (
     <html className='dark' lang='en'>
-      <body className={firaCode.className}>{children}</body>
+      <head />
+      <body className={`${firaCode.className} ${firaCode.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
