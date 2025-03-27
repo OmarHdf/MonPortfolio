@@ -35,7 +35,7 @@ export default function AboutSection() {
             className='rounded-full size-[200px] bg-gradient-primary p-0.5'
           >
             <Image
-              className='size-full rounded-full grayscale hover:grayscale-0 transition-all object-cover'
+              className='size-full rounded-full grayscale-0 object-cover'
               width={600}
               height={600}
               alt='about profile image'
@@ -55,30 +55,41 @@ export default function AboutSection() {
             initial={{ y: '-20%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7, ease: 'easeIn', duration: 0.5 }}
-            className='text-muted-foreground text-justify'
+            className='text-muted-foreground'
           >
-            Hey, I’m Aga Kadela, a Next.js & React developer who helps
-            businesses fix, optimize, scale, and build high-performance web
-            applications. If your app is slow, buggy, struggling to scale, or
-            missing key AI-driven features—I can help.
+            <strong>
+              I&apos;m Aga Kadela — I build software that works, and I fix the
+              stuff that doesn&apos;t.
+            </strong>
+            <br />
+            <br />I work solo, full-stack, and fast. Mostly with{' '}
+            <strong>Next.js, React, Supabase, Tailwind, TypeScript</strong>, and
+            whatever else it takes to get the job done right. <br />
+            <br />
+            Some people hire me to build from scratch. Others bring me in when
+            things are broken —{' '}
+            <strong>
+              slow apps, half-built MVPs, ChatGPT-generated code, or no-code
+              experiments
+            </strong>{' '}
+            that hit their limit. <br />
+            <br />
+            Either way, I build it clean and make sure it runs the way it
+            should.
             <br />
             <br />
             <span className='font-semibold'>📌 What I Do Best:</span>
+            <br />✅ <strong>Fix broken code</strong> – Debugging, crashes,
+            broken logic, and AI/LLM features that don&apos;t work right.
+            <br />✅ <strong>Improve performance</strong> – Speed, Lighthouse,
+            Core Web Vitals, smooth UX, fast data.
+            <br />✅ <strong>Scale apps properly</strong> – Clean architecture,
+            database upgrades, API optimization.
+            <br />✅ <strong>Build from zero</strong> – Full-stack Next.js +
+            Typescript apps, custom dashboards, and workflows.
             <br />
-            ✅ Fixing Bugs & Broken Code – Debugging, API issues, UI glitches
-            that frustrate users.
-            <br />
-            ✅ Optimizing Performance – Speeding up apps, improving SEO, and
-            delivering a smooth experience.
-            <br />
-            ✅ Scaling Web Apps – Making sure your app grows without downtime or
-            technical limits.
-            <br />
-            ✅ Building from Scratch – Creating fast, scalable, and future-proof
-            Next.js applications.
-            <br />
-            ✅ AI-Powered Features – Automating workflows, integrating chatbots,
-            and enhancing user engagement.
+            ✅ AI Features – Gemini/OpenAI-powered chat, content tools,
+            automations, vector search.
             <br />
             <br />
             <span className='font-semibold'>📌 Why Work With Me?</span>
