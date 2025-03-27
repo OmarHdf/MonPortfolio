@@ -1,16 +1,16 @@
-import data from "@/data";
-import { cn } from "@/lib/utils";
-import { File, Github, Info } from "lucide-react";
-import Link from "next/link";
+import data from '@/data';
+import { cn } from '@/lib/utils';
+import { Info } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Sidebar() {
   return (
-    <div className="h-full border-r bg-muted hidden lg:flex flex-col justify-start flex-shrink-0">
+    <div className='h-full border-r bg-muted hidden lg:flex flex-col justify-start flex-shrink-0'>
       <Link
-        href="/"
+        href='/'
         className={cn(
-          "relative size-14 flex items-center justify-center text-muted-foreground hover:bg-background",
-          "text-foreground bg-background hover:bg-background"
+          'relative size-14 flex items-center justify-center text-muted-foreground hover:bg-background',
+          'text-foreground bg-background hover:bg-background'
         )}
       >
         <BorderActive /> <Info />
@@ -22,9 +22,9 @@ export default function Sidebar() {
               <Link
                 key={link.name}
                 href={link.link}
-                target="_blank"
+                target='_blank'
                 className={cn(
-                  "relative size-14 flex items-center justify-center text-muted-foreground hover:bg-background mt-auto"
+                  'relative size-14 flex items-center justify-center text-muted-foreground hover:bg-background mt-auto'
                 )}
               >
                 <link.icon />
@@ -37,5 +37,5 @@ export default function Sidebar() {
 }
 
 const BorderActive = () => (
-  <div className="absolute left-0 top-0 h-full w-0.5 bg-primary-foreground" />
+  <div className='absolute left-0 top-0 h-full w-0.5 bg-primary-foreground' />
 );

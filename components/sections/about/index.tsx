@@ -1,7 +1,7 @@
 'use client';
 import useCurSection from '@/hooks/use-cur-section';
 import Image from 'next/image';
-import { Fragment, useRef } from 'react';
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import agakadela from '@/public/imgs/agakadela_mini.webp';
 

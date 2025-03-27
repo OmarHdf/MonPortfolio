@@ -1,12 +1,11 @@
-"use client";
-import React, { useRef } from "react";
-import Image from "next/image";
+'use client';
+import React, { useRef } from 'react';
+import Image from 'next/image';
 
-import LaptopAnimation from "./laptop-animation";
-
-import ProjectCard from "./project-card";
-import useCurSection from "@/hooks/use-cur-section";
-import data from "@/data";
+import LaptopAnimation from './laptop-animation';
+import ProjectCard from './project-card';
+import useCurSection from '@/hooks/use-cur-section';
+import data from '@/data';
 
 export default function ProjectsSection() {
   const ref = useRef(null);
@@ -14,30 +13,30 @@ export default function ProjectsSection() {
   return (
     <div
       ref={ref}
-      id="projects"
-      className="w-full p-12 flex justify-between flex-col items-center lg:flex-row lg:items-stretch gap-12 container my-32 text-sm md:text-base"
+      id='projects'
+      className='w-full p-12 flex justify-between flex-col items-center lg:flex-row lg:items-stretch gap-12 container my-32 text-sm md:text-base'
     >
       <div>
-        <div className="sticky top-8 text-center md:text-left">
+        <div className='sticky top-8 text-center md:text-left'>
           {/* grid image behind */}
           <Image
-            className="absolute -top-2 -left-5 -z-10 text-transparent opacity-30 w-full h-1/2 object-cover"
-            src="/svgs/grid.svg"
-            alt="grid image"
+            className='absolute -top-2 -left-5 -z-10 text-transparent opacity-30 w-full h-1/2 object-cover'
+            src='/svgs/grid.svg'
+            alt='grid image'
             width={0}
             height={0}
           />
-          <h1 className="text-3xl md:text-4xl text-gradient-primary">
-            <span>{"//"}</span>
+          <h1 className='text-3xl md:text-4xl text-gradient-primary'>
+            <span>{'//'}</span>
             Recent Projects
           </h1>
-          <LaptopAnimation className="w-[300px] -scale-x-100 scale-y-100 mx-auto md:mx-0" />
-          <p className="w-[400px] text-muted-foreground">
+          <LaptopAnimation className='w-[300px] -scale-x-100 scale-y-100 mx-auto md:mx-0' />
+          <p className='w-[400px] text-muted-foreground'>
             Building, Fixing & Scaling Next.js & AI Apps That Actually Work
           </p>
         </div>
       </div>
-      <div className="space-y-[60vh]">
+      <div className='space-y-[60vh]'>
         {data.projects.projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
