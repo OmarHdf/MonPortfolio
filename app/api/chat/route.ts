@@ -1,6 +1,6 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import { NextResponse } from "next/server";
-import data from "@/data";
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import { NextResponse } from 'next/server';
+import data from '@/data';
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
@@ -8,13 +8,13 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 const createContextFromData = () => {
   const projects = data.projects.projects
     .map((p) => `- ${p.title}: ${p.description}`)
-    .join("\n");
+    .join('\n');
 
-  const skills = data.technologies.skills.map((s) => s.name).join(", ");
+  const skills = data.technologies.skills.map((s) => s.name).join(', ');
 
   return `
     About Aga Kadela:
-    - Senior Full Stack Developer specializing in Next.js, React, and AI Integration
+    - Full Stack Product Engineer specializing in Next.js, React, and AI Integration
     - Over 10 years of experience in web development and 2 years of experience in AI implementation
     - Email: ${data.contact.email}
     
@@ -42,13 +42,7 @@ const createContextFromData = () => {
        - Content suggestion engines
        - Behavioral analytics integration
     
-    4. Computer Vision Integration:
-       - Image recognition features
-       - Visual search capabilities
-       - Image processing and optimization
-       - AR features in web apps
-    
-    5. Process Automation:
+    4. Process Automation:
        - Workflow automation with AI
        - Data extraction and processing
        - Form automation
@@ -87,7 +81,7 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash",
+      model: 'gemini-2.0-flash',
       generationConfig: {
         temperature: 0.7,
         topK: 1,
@@ -99,7 +93,7 @@ export async function POST(req: Request) {
     const chat = model.startChat({
       history: [
         {
-          role: "user",
+          role: 'user',
           parts: `You are an AI assistant for Aga Kadela. Use the following information to help answer questions:
             ${createContextFromData()}
             
@@ -116,12 +110,12 @@ export async function POST(req: Request) {
             - Focus on Aga's expertise in Next.js, React, and advanced AI integration`,
         },
         {
-          role: "model",
+          role: 'model',
           parts:
             "I understand. I'll act as Aga's AI assistant, providing detailed, confident responses about her extensive experience in AI integration, Next.js development, and full-stack capabilities. I'll emphasize her practical approach and successful project implementations while maintaining professionalism and enthusiasm.",
         },
         ...messages.slice(-MESSAGE_HISTORY_LIMIT).map((msg: any) => ({
-          role: msg.role === "assistant" ? "model" : "user",
+          role: msg.role === 'assistant' ? 'model' : 'user',
           parts: msg.content,
         })),
       ],
@@ -135,9 +129,9 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ content: text });
   } catch (error) {
-    console.error("Chat API Error:", error);
+    console.error('Chat API Error:', error);
     return NextResponse.json(
-      { error: "Failed to get AI response" },
+      { error: 'Failed to get AI response' },
       { status: 500 }
     );
   }

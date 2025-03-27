@@ -1,33 +1,37 @@
 'use client';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import data from '@/data';
 import Link from 'next/link';
 import CodeTyping from './code-typing';
 import useCurSection from '@/hooks/use-cur-section';
+import useIsDesktop from '@/hooks/use-is-desktop';
 
 export default function HomeSection() {
   const router = useRouter();
   const ref = useRef(null);
   useCurSection(ref, 0.1);
+  const isDesktop = useIsDesktop();
+
   return (
     <section
       id='home'
       ref={ref}
       className='relative min-h-full flex flex-col xl:flex-row gap-12 p-6 items-center justify-center overflow-hidden container text-center md:text-left'
     >
-      {/* grid image behind */}
-      <Image
-        className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 text-transparent opacity-10 h-auto w-10/12 max-w-[1250px]'
-        src='/svgs/grid.svg'
-        alt='grid image'
-        width={0}
-        height={0}
-        priority={true}
-      />
+      {isDesktop && (
+        <Image
+          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 text-transparent opacity-10 h-auto w-10/12 max-w-[1250px]'
+          src='/svgs/grid.svg'
+          alt='grid image'
+          priority={true}
+          width={0}
+          height={0}
+        />
+      )}
 
       <div className='space-y-7 text-center xl:text-left xl:text-xl'>
         <div className='-space-y-1'>
