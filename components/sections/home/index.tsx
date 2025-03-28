@@ -9,7 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import CodeTyping from './code-typing';
 import grid from '@/public/svgs/grid.svg';
-
+import TextAnimation from '@/components/layout/text-animation';
 import useCurSection from '@/hooks/use-cur-section';
 
 export default function HomeSection() {
@@ -108,24 +108,3 @@ export default function HomeSection() {
     </section>
   );
 }
-
-const TextAnimation = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className='overflow-hidden relative'>
-      <motion.div
-        className='absolute top-0 left-0 h-full w-full bg-gradient-primary origin-left'
-        initial={{ scaleX: 1 }}
-        animate={{ scaleX: [1, 0] }}
-        transition={{ duration: 0.5 }}
-      />
-
-      <motion.div
-        initial={{ y: '-100%', opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-      >
-        {children}
-      </motion.div>
-    </div>
-  );
-};
