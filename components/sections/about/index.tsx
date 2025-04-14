@@ -58,7 +58,7 @@ export default function AboutSection() {
             className='text-muted-foreground'
           >
             <strong>
-              I'm Alex Muniz — I build solid software, and I fix what others leave broken.
+              I&apos;m Alex Muniz — I build solid software, and I fix what others leave broken.
             </strong>
             <br />
             <br />
@@ -93,12 +93,12 @@ export default function AboutSection() {
             <br />
             🔹 I work fast and efficiently. No endless meetings or blockers — just clean solutions that work.
             <br />
-            🔹 I don’t just fix problems — I prevent them. I build systems designed for scale, security, and long-term success.
+            🔹 I don&apos;t just fix problems — I prevent them. I build systems designed for scale, security, and long-term success.
             <br />
             <br />
-            <span className='font-semibold'>📌 Let's Talk</span>
+            <span className='font-semibold'>📌 Let&apos;s Talk</span>
             <br />
-            If your product needs fixing, scaling, or building from the ground up, let’s connect.
+            If your product needs fixing, scaling, or building from the ground up, let&apos;s connect.
             <br />
             <a href='#contact' className='text-primary hover:underline'>
               ✅ Get in Touch
