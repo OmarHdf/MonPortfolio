@@ -7,21 +7,24 @@ const defaultProps = {
   theme: themes.vsDark,
 };
 
-const codeSnippet = `// Welcome to my AI-Powered Portfolio! 🚀
-import { NextDeveloper } from 'agakadela';
-import { AIExpertise } from '@/skills';
+const codeSnippet = `// Welcome to my Dev-Driven Portfolio! 🚀
+import { SeniorSoftwareEngineer } from 'virgilhawkins00';
+import { SecureDev, MobileExpertise, DevOpsCloud } from '@/skills';
 
-function createAmazingWebApp() {
+function buildReliableSoftware() {
   const mySkills = {
-    webDev: ["Next.js", "React", "TS"],
-    aiTools: ["ChatGPT", "ML"],
-    passion: "Building AI web apps"
+    frontend: ["React", "Vue", "TypeScript"],
+    mobile: ["React Native", "Flutter"],
+    backend: ["Laravel", "Golang"],
+    cloud: ["AWS", "Azure"],
+    devOps: ["Docker", "CI/CD"],
+    focus: "Secure, scalable, and high-performance systems"
   };
 
   return {
-    message: "Let's work together!",
-    services: ["Web Apps", "AI Features"],
-    contact: "Scroll down to connect →"
+    message: "Need help building or scaling your app?",
+    services: ["Mobile & Web Development", "Secure Architecture", "Cloud & DevOps"],
+    contact: "Let's connect below ↓"
   };
 };`;
 

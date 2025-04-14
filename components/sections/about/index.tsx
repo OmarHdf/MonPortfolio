@@ -3,7 +3,7 @@ import useCurSection from '@/hooks/use-cur-section';
 import Image from 'next/image';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import agakadela from '@/public/imgs/agakadela_mini.webp';
+import agakadela from '@/public/imgs/agakadela-mini.webp';
 
 export default function AboutSection() {
   const ref = useRef(null);
@@ -58,57 +58,47 @@ export default function AboutSection() {
             className='text-muted-foreground'
           >
             <strong>
-              I&apos;m Aga Kadela — I build software that works, and I fix the
-              stuff that doesn&apos;t.
+              I'm Alex Muniz — I build solid software, and I fix what others leave broken.
             </strong>
             <br />
-            <br />I work solo, full-stack, and fast. Mostly with{' '}
-            <strong>Next.js, React, Supabase, Tailwind, TypeScript</strong>, and
-            whatever else it takes to get the job done right. <br />
             <br />
-            Some people hire me to build from scratch. Others bring me in when
-            things are broken —{' '}
+            I work as a senior engineer, fast and focused. Mostly with{' '}
             <strong>
-              slow apps, half-built MVPs, ChatGPT-generated code, or no-code
-              experiments
-            </strong>{' '}
-            that hit their limit. <br />
+              React, React Native, Flutter, TypeScript, Laravel, Golang
+            </strong>, and whatever else it takes to ship scalable, secure, and high-performance apps — mobile or web.
             <br />
-            Either way, I build it clean and make sure it runs the way it
-            should.
+            <br />
+            Some clients bring me in to lead tech migrations or rebuild legacy systems. Others call when performance lags, code is insecure, or infrastructure needs stability and scale.
+            <br />
+            <br />
+            Either way, I build clean, secure, and reliable software — the kind that lasts.
             <br />
             <br />
             <span className='font-semibold'>📌 What I Do Best:</span>
-            <br />✅ <strong>Fix broken code</strong> – Debugging, crashes,
-            broken logic, and AI/LLM features that don&apos;t work right.
-            <br />✅ <strong>Improve performance</strong> – Speed, Lighthouse,
-            Core Web Vitals, smooth UX, fast data.
-            <br />✅ <strong>Scale apps properly</strong> – Clean architecture,
-            database upgrades, API optimization.
-            <br />✅ <strong>Build from zero</strong> – Full-stack Next.js +
-            Typescript apps, custom dashboards, and workflows.
             <br />
-            ✅ AI Features – Gemini/OpenAI-powered chat, content tools,
-            automations, vector search.
+            ✅ <strong>Secure development</strong> – Encryption, validation, and protecting data across frontend and backend.
+            <br />
+            ✅ <strong>Mobile apps</strong> – Flutter & React Native, efficient APIs, offline-ready performance.
+            <br />
+            ✅ <strong>Frontend engineering</strong> – React/Vue, clean UI/UX, accessibility, maintainability.
+            <br />
+            ✅ <strong>Modernization</strong> – Migrating legacy systems, Laravel/TypeScript/Golang refactors.
+            <br />
+            ✅ <strong>DevOps & Cloud</strong> – CI/CD, Docker, AWS, Azure, scalable infrastructure.
             <br />
             <br />
             <span className='font-semibold'>📌 Why Work With Me?</span>
             <br />
-            🔹 I focus on real results, not just code. Your web app should run
-            fast, handle traffic, and grow without breaking—I make sure it does.
+            🔹 I focus on real results, not just code. Your product should perform, scale, and be safe — I make sure it does.
             <br />
-            🔹 I work fast and efficiently. No endless back-and-forth, no
-            unnecessary delays—just solutions that work.
+            🔹 I work fast and efficiently. No endless meetings or blockers — just clean solutions that work.
             <br />
-            🔹 I don’t just fix problems—I prevent them. Whether optimizing an
-            existing app or building something new, I ensure it’s scalable,
-            maintainable, and built for the long run.
+            🔹 I don’t just fix problems — I prevent them. I build systems designed for scale, security, and long-term success.
             <br />
             <br />
-            <span className='font-semibold'>📌 Let&apos;s Talk</span>
+            <span className='font-semibold'>📌 Let's Talk</span>
             <br />
-            If your app needs fixing, optimizing, scaling, or building,
-            let&apos;s connect.
+            If your product needs fixing, scaling, or building from the ground up, let’s connect.
             <br />
             <a href='#contact' className='text-primary hover:underline'>
               ✅ Get in Touch

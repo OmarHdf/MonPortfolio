@@ -68,7 +68,7 @@ export default function ChatAssistant() {
     {
       role: "assistant",
       content:
-        "Hi! I'm Aga's AI assistant. I can help you learn more about her skills, experience, or how she can help with your project. What would you like to know?",
+        "Hi! I'm Alex's AI assistant. I can help you explore his skills, experience, and how he can contribute to your project — from secure mobile apps to scalable web systems. What would you like to know?",
       timestamp: new Date(),
     },
   ]);
@@ -204,7 +204,7 @@ export default function ChatAssistant() {
         {
           role: "assistant",
           content:
-            "Hi! I'm Aga's AI assistant. I can help you learn more about her skills, experience, or how she can help with your project. What would you like to know?",
+            "Hi! I'm Alex's AI assistant. I can help you explore his skills, experience, and how he can contribute to your project — from secure mobile apps to scalable web systems. What would you like to know?",
           timestamp: new Date(),
         },
       ]);

@@ -7,27 +7,22 @@ import lukaskadela from '@/public/projects-imgs/lukaskadela.webp';
 
 const data = {
   home: {
-    name: 'Aga Kadela',
+    name: 'Alex Muniz',
     description:
-      'I Fix, Optimize & Build #Next_js & #React Apps - Powered by #AI', // # -> for css style, _ -> create space, __ -> creates dash
+      'I Fix, Optimize & Build #ReactNative, #Flutter, #React & #Laravel Apps — Powered by Clean Code, Cloud & Security', // # -> for css style, _ -> create space, __ -> creates dash
     cvLink: '#contact',
   },
   sidebar: {
     links: [
       {
         name: 'github',
-        link: 'https://github.com/agakadela',
+        link: 'https://github.com/virgilhawkins00',
         icon: Github,
       },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/agakadela/',
+        link: 'https://www.linkedin.com/in/lexmunizes/',
         icon: Linkedin,
-      },
-      {
-        name: 'youtube',
-        link: 'https://www.youtube.com/@agakadela',
-        icon: Youtube,
       },
     ],
   },
@@ -36,36 +31,36 @@ const data = {
     projects: [
       {
         id: 1,
-        title: 'Coder Woman Platform',
+        title: 'ViaOptima',
         description:
-          'Platform to sell online courses, helping empower women in tech by making coding education accessible.\n\n Technologies Used: Next.js, React.js, CSS, Stripe API.',
+          'Platform for smart fleet and route management, helping companies reduce logistics costs and make data-driven decisions.\n\n Technologies Used: Next.js, Nest.js, AWS, Elastic Beanstalk, PostgreSQL, Redis, Rust, RabbitMQ.',
         image: cw,
-        previewLink: 'https://coderwoman.com',
+        previewLink: 'https://develop.d2tjm7jdwj7qjp.amplifyapp.com',
       },
-      {
-        id: 2,
-        title: 'RetroCech Website',
-        description:
-          'A professional and visually appealing website that captures the vintage style of the business while ensuring smooth performance and easy navigation. \n\n Technologies Used: Next.js, Tailwind CSS, React.js.',
-        image: retrocech,
-        previewLink: 'https://retrocech.com',
-      },
-      {
-        id: 3,
-        title: 'E-commerce Platform',
-        description:
-          'Worked on one of a biggest e-commerce platform in Poland, as part of a Scrum team for 1.5 years, focusing on checkout and payment workflows. \n\n Technologies Used: Next.js, React.js, Tailwind CSS, Stripe API.',
-        image: ecommerce,
-        previewLink: 'https://x-kom.pl',
-      },
-      {
-        id: 4,
-        title: 'Personal Portfolio Website',
-        description:
-          'A reliable and polished website that makes it easy for the expert to share their skills and impress potential clients or employers. \n\n Technologies Used: Next.js, React.js, CSS.',
-        image: lukaskadela,
-        previewLink: 'https://lukaskadela.com',
-      },
+      // {
+      //   id: 2,
+      //   title: 'RetroCech Website',
+      //   description:
+      //     'A professional and visually appealing website that captures the vintage style of the business while ensuring smooth performance and easy navigation. \n\n Technologies Used: Next.js, Tailwind CSS, React.js.',
+      //   image: retrocech,
+      //   previewLink: 'https://retrocech.com',
+      // },
+      // {
+      //   id: 3,
+      //   title: 'E-commerce Platform',
+      //   description:
+      //     'Worked on one of a biggest e-commerce platform in Poland, as part of a Scrum team for 1.5 years, focusing on checkout and payment workflows. \n\n Technologies Used: Next.js, React.js, Tailwind CSS, Stripe API.',
+      //   image: ecommerce,
+      //   previewLink: 'https://x-kom.pl',
+      // },
+      // {
+      //   id: 4,
+      //   title: 'Personal Portfolio Website',
+      //   description:
+      //     'A reliable and polished website that makes it easy for the expert to share their skills and impress potential clients or employers. \n\n Technologies Used: Next.js, React.js, CSS.',
+      //   image: lukaskadela,
+      //   previewLink: 'https://lukaskadela.com',
+      // },
     ],
   },
   technologies: {
@@ -163,8 +158,8 @@ const data = {
     ],
   },
   contact: {
-    email: 'aga.kadela.dev@gmail.com',
-    name: 'Aga Kadela',
+    email: 'admin@virgilhawkins.com',
+    name: 'Alex Muniz',
   },
 };
 

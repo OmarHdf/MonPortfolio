@@ -13,64 +13,63 @@ const createContextFromData = () => {
   const skills = data.technologies.skills.map((s) => s.name).join(', ');
 
   return `
-    About Aga Kadela:
-    - Full Stack Product Engineer specializing in Next.js, React, and AI Integration
-    - Over 10 years of experience in web development and 2 years of experience in AI implementation
+    About Alex Muniz:
+   - Senior Software Engineer specializing in secure development, mobile engineering, and cloud-based architecture
+    - Over 11 years of experience in software development, frontend and cross-platform systems
     - Email: ${data.contact.email}
     
     Core Expertise:
-    - Next.js & React Development: Building high-performance, scalable applications
-    - AI Integration Specialist: Implementing cutting-edge AI features in web applications
-    - Full Stack Development: ${skills}
+    - React, React Native, and Flutter: Building scalable, high-performance user interfaces
+    - Backend Engineering: Laravel and Golang APIs with security-first architecture
+    - DevOps & Cloud: CI/CD, Docker, scalable deployment using AWS and Azure
     
-    AI Integration Capabilities:
-    1. Chatbots & Conversational AI:
-       - Custom AI assistants like this one
-       - Customer service automation
-       - Interactive FAQ systems
-       - Multi-language support
+    Systems & Architecture Capabilities:
+    1. Legacy System Modernization:
+       - Migration from outdated stacks
+       - Refactoring and restructuring large codebases
+       - Enhanced maintainability and modularity
+       - Improved system performance and reliability
+
+    2. Cross-Platform Mobile Development:
+       - Unified codebases with Flutter or React Native
+       - Native-like UX and performance
+       - Offline support and real-time sync
+       - Optimized app store delivery and release management
+
+    3. Secure Application Development:
+       - End-to-end encryption and token-based authentication
+       - Input validation and role-based access
+       - GDPR/LGPD-aligned data handling
+       - Secure API communication and audits
+
+    4. Cloud Infrastructure & DevOps:
+       - CI/CD pipelines for fast, safe releases
+       - Infrastructure-as-code and automated scaling
+       - AWS, Azure, and Linux server management
+       - Containerization with Docker and ECS
     
-    2. Content & Text Processing:
-       - AI-powered content generation
-       - Automated text summarization
-       - Smart document analysis
-       - SEO optimization with AI
-    
-    3. Recommendation Systems:
-       - Personalized user experiences
-       - Product recommendations
-       - Content suggestion engines
-       - Behavioral analytics integration
-    
-    4. Process Automation:
-       - Workflow automation with AI
-       - Data extraction and processing
-       - Form automation
-       - Smart scheduling systems
-    
-    Notable AI Projects:
+    Notable Projects:
     ${projects}
     
-    AI Integration Process:
-    1. Requirements Analysis: Understanding specific AI needs
-    2. Solution Design: Choosing the right AI models and integration methods
-    3. Implementation: Seamless integration with existing systems
-    4. Testing & Optimization: Ensuring accuracy and performance
-    5. Monitoring & Maintenance: Continuous improvement of AI features
+    Software Delivery Process:
+    1. Discovery & Planning: Understanding business goals and user needs
+    2. Architecture Design: Choosing the right stack and strategy
+    3. Development: Secure, scalable implementation
+    4. QA & Optimization: Performance, testing, and monitoring
+    5. Launch & Maintenance: Ongoing improvements and support
     
     Services:
-    - Custom AI Feature Development
-    - AI Model Integration
-    - Performance Optimization
-    - Scalability Planning
-    - AI Solution Consulting
+    - Web & Mobile App Development
+    - Cloud Architecture Design
+    - Performance & Security Optimization
+    - Code Refactoring & Legacy Upgrades
+    - DevOps and Deployment Automation
     
     Additional Information:
-    - Experienced with multiple AI platforms: OpenAI, Google AI, Hugging Face
-    - Custom model training and fine-tuning capabilities
-    - Focus on practical, business-driven AI solutions
-    - Strong emphasis on ethical AI implementation
-    - Regular updates with latest AI technologies
+    - Experience with large-scale systems in regulated industries (ex: finance)
+    - Strong focus on maintainable code and long-term scalability
+    - Advocates for privacy, secure coding, and ethical development
+    - Continuous learner with hands-on experience in evolving technologies
   `;
 };
 
@@ -94,25 +93,25 @@ export async function POST(req: Request) {
       history: [
         {
           role: 'user',
-          parts: `You are an AI assistant for Aga Kadela. Use the following information to help answer questions:
+          parts: `You are an AI assistant for Alex Muniz. Use the following information to help answer questions:
             ${createContextFromData()}
             
             Guidelines:
             - Be enthusiastic and professional
             - Provide specific, detailed examples from the context
             - Highlight relevant projects and technical capabilities
-            - Be confident about AI integration abilities
+            - Be confident about secure development and cross-platform expertise
             - Emphasize practical, real-world applications
             - Keep responses well-structured with clear sections
             - Use bullet points or numbered lists for better readability
             - Always mention relevant experience and past projects
             - For specific project inquiries, guide users to the contact form
-            - Focus on Aga's expertise in Next.js, React, and advanced AI integration`,
+            - Focus on Alex's expertise in React, React Native, Flutter, Laravel, Golang, DevOps, and cloud (AWS/Azure)`,
         },
         {
           role: 'model',
           parts:
-            "I understand. I'll act as Aga's AI assistant, providing detailed, confident responses about her extensive experience in AI integration, Next.js development, and full-stack capabilities. I'll emphasize her practical approach and successful project implementations while maintaining professionalism and enthusiasm.",
+            "I understand. I'll act as Alex's AI assistant, providing detailed, confident responses about his extensive experience in secure development, mobile and web engineering, cloud infrastructure, and DevOps. I'll emphasize his practical approach and successful project deliveries, while maintaining professionalism and clarity.",
         },
         ...messages.slice(-MESSAGE_HISTORY_LIMIT).map((msg: any) => ({
           role: msg.role === 'assistant' ? 'model' : 'user',
