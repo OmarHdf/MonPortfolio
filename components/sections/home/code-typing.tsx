@@ -7,23 +7,22 @@ const defaultProps = {
   theme: themes.vsDark,
 };
 
-const codeSnippet = `// Welcome to my Dev-Driven Portfolio! 🚀
-import { SeniorSoftwareEngineer } from 'virgilhawkins00';
-import { SecureDev, MobileExpertise, DevOpsCloud } from '@/skills';
+const codeSnippet = `// Welcome to my DevSecOps Portfolio! 🚀
+import { DevSecOpsEngineer } from 'omar-elhedfi';
+import { SecureCI_CD, CloudExpertise, Monitoring } from '@/skills';
 
-function buildReliableSoftware() {
+function buildReliableInfrastructure() {
   const mySkills = {
-    frontend: ["React", "Vue", "TypeScript"],
-    mobile: ["React Native", "Flutter"],
-    backend: ["Laravel", "Golang"],
+    ci_cd: ["Jenkins", "GitHub Actions", "SonarQube"],
+    containers: ["Docker", "Kubernetes"],
     cloud: ["AWS", "Azure"],
-    devOps: ["Docker", "CI/CD"],
-    focus: "Secure, scalable, and high-performance systems"
+    security: ["Trivy", "Hadolint", "Dockle", "OWASP ZAP"],
+    focus: "Secure, automated, and high-performance pipelines"
   };
 
   return {
-    message: "Need help building or scaling your app?",
-    services: ["Mobile & Web Development", "Secure Architecture", "Cloud & DevOps"],
+    message: "Need help building or securing your pipeline?",
+    services: ["DevSecOps & CI/CD", "Cloud & Kubernetes", "Monitoring & Alerts"],
     contact: "Let's connect below ↓"
   };
 };`;
@@ -136,3 +135,4 @@ export default function CodeTyping() {
     </motion.div>
   );
 }
+

@@ -7,60 +7,65 @@ import lukaskadela from '@/public/projects-imgs/lukaskadela.webp';
 
 const data = {
   home: {
-    name: 'Alex Muniz',
+    name: 'Omar El Hedfi',
     description:
-      'I Fix, Optimize & Build #ReactNative, #Flutter, #React & #Laravel Apps — Powered by Clean Code, Cloud & Security', // # -> for css style, _ -> create space, __ -> creates dash
-    cvLink: '#contact',
+      'Empowering Code with Automation ⚙️ | #DevOps #AI #CloudNative #Coding',
+    cvLink:
+      'https://drive.google.com/file/d/1zoXGMwgizxMh3oH_hVwpM7hFqREOppgG/view?usp=drive_link',
   },
   sidebar: {
     links: [
       {
         name: 'github',
-        link: 'https://github.com/virgilhawkins00',
+        link: 'https://github.com/OmarHdf',
         icon: Github,
       },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/lexmunizes/',
+        link: 'https://www.linkedin.com/in/omarelhedfi/',
         icon: Linkedin,
+      },
+      {
+        name: 'youtube',
+        link: 'https://www.youtube.com/channel/UCsKB5IwBz2MHwzIxjD1GY-g',
+        icon: Youtube,
       },
     ],
   },
-
   projects: {
     projects: [
       {
         id: 1,
-        title: 'ViaOptima',
+        title: 'Medina-Website',
         description:
-          'Platform for smart fleet and route management, helping companies reduce logistics costs and make data-driven decisions.\n\n Technologies Used: Next.js, Nest.js, AWS, Elastic Beanstalk, PostgreSQL, Redis, Rust, RabbitMQ.',
+          'Medina-Website is a professional showcase site deployed through an automated DevSecOps-AI pipeline, featuring security scans (Trivy, Dockle, Hadolint, Dependency-Check) and Kubernetes deployment. An AI layer (LLaMA3.2 via Ollama) is integrated to automatically generate readable summaries of security reports at each CI/CD pipeline execution.',
         image: cw,
-        previewLink: 'https://develop.d2tjm7jdwj7qjp.amplifyapp.com',
+        previewLink: 'https://github.com/OmarHdf/Medina-Website.git',
       },
-      // {
-      //   id: 2,
-      //   title: 'RetroCech Website',
-      //   description:
-      //     'A professional and visually appealing website that captures the vintage style of the business while ensuring smooth performance and easy navigation. \n\n Technologies Used: Next.js, Tailwind CSS, React.js.',
-      //   image: retrocech,
-      //   previewLink: 'https://retrocech.com',
-      // },
-      // {
-      //   id: 3,
-      //   title: 'E-commerce Platform',
-      //   description:
-      //     'Worked on one of a biggest e-commerce platform in Poland, as part of a Scrum team for 1.5 years, focusing on checkout and payment workflows. \n\n Technologies Used: Next.js, React.js, Tailwind CSS, Stripe API.',
-      //   image: ecommerce,
-      //   previewLink: 'https://x-kom.pl',
-      // },
-      // {
-      //   id: 4,
-      //   title: 'Personal Portfolio Website',
-      //   description:
-      //     'A reliable and polished website that makes it easy for the expert to share their skills and impress potential clients or employers. \n\n Technologies Used: Next.js, React.js, CSS.',
-      //   image: lukaskadela,
-      //   previewLink: 'https://lukaskadela.com',
-      // },
+      {
+        id: 2,
+        title: 'My Portfolio',
+        description:
+          'A professional portfolio built with Next.js, Tailwind CSS, and React.js to showcase skills, projects, and DevSecOps expertise.',
+        image: retrocech,
+        previewLink: 'https://github.com/OmarHdf/my-website.git',
+      },
+      {
+        id: 3,
+        title: 'E-commerce Platform',
+        description:
+          'Worked on an e-commerce platform focusing on secure payments and cloud deployments. \n\n Technologies Used: Next.js, React.js, Tailwind CSS, Stripe API.',
+        image: ecommerce,
+        previewLink: 'https://x-kom.pl',
+      },
+      {
+        id: 4,
+        title: 'Portfolio Website',
+        description:
+          'A polished website showcasing skills, projects, and secure coding practices. \n\n Technologies Used: Next.js, React.js, CSS.',
+        image: lukaskadela,
+        previewLink: 'https://lukaskadela.com',
+      },
     ],
   },
   technologies: {
@@ -115,9 +120,9 @@ const data = {
       },
       {
         id: 9,
-        name: 'vitejs',
-        src: '/skills/vitejs.svg',
-        link: 'https://en.wikipedia.org/wiki/Vite_(software)',
+        name: 'Jenkins',
+        src: '/skills/Jenkins.svg',
+        link: 'https://en.wikipedia.org/wiki/Jenkins_(software)',
       },
       {
         id: 10,
@@ -158,9 +163,10 @@ const data = {
     ],
   },
   contact: {
-    email: 'admin@virgilhawkins.com',
-    name: 'Alex Muniz',
+    email: 'omarhedfi99@gmail.com',
+    name: 'Omar El Hedfi',
   },
 };
 
 export default data;
+

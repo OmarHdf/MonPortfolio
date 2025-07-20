@@ -9,25 +9,25 @@ import logo from '@/public/imgs/logo.webp';
 const navItems = [
   {
     id: 1,
-    name: 'Home.tsx',
+    name: 'Home',
     path: '#home',
     icon: Home,
   },
   {
     id: 2,
-    name: 'About.tsx',
+    name: 'About',
     path: '#about',
     icon: User,
   },
   {
     id: 3,
-    name: 'Projects.tsx',
+    name: 'Projects',
     path: '#projects',
     icon: File,
   },
   {
     id: 4,
-    name: 'Contact-Me.tsx',
+    name: 'Contact-Me',
     path: '#contact',
     icon: LucideSend,
     isRight: true,

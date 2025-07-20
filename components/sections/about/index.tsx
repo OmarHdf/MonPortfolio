@@ -57,53 +57,48 @@ export default function AboutSection() {
             transition={{ delay: 0.7, ease: 'easeIn', duration: 0.5 }}
             className='text-muted-foreground'
           >
-            <strong>
-              I&apos;m Alex Muniz — I build solid software, and I fix what others leave broken.
-            </strong>
-            <br />
-            <br />
-            I work as a senior engineer, fast and focused. Mostly with{' '}
-            <strong>
-              React, React Native, Flutter, TypeScript, Laravel, Golang
-            </strong>, and whatever else it takes to ship scalable, secure, and high-performance apps — mobile or web.
-            <br />
-            <br />
-            Some clients bring me in to lead tech migrations or rebuild legacy systems. Others call when performance lags, code is insecure, or infrastructure needs stability and scale.
-            <br />
-            <br />
-            Either way, I build clean, secure, and reliable software — the kind that lasts.
-            <br />
-            <br />
-            <span className='font-semibold'>📌 What I Do Best:</span>
-            <br />
-            ✅ <strong>Secure development</strong> – Encryption, validation, and protecting data across frontend and backend.
-            <br />
-            ✅ <strong>Mobile apps</strong> – Flutter & React Native, efficient APIs, offline-ready performance.
-            <br />
-            ✅ <strong>Frontend engineering</strong> – React/Vue, clean UI/UX, accessibility, maintainability.
-            <br />
-            ✅ <strong>Modernization</strong> – Migrating legacy systems, Laravel/TypeScript/Golang refactors.
-            <br />
-            ✅ <strong>DevOps & Cloud</strong> – CI/CD, Docker, AWS, Azure, scalable infrastructure.
-            <br />
-            <br />
-            <span className='font-semibold'>📌 Why Work With Me?</span>
-            <br />
-            🔹 I focus on real results, not just code. Your product should perform, scale, and be safe — I make sure it does.
-            <br />
-            🔹 I work fast and efficiently. No endless meetings or blockers — just clean solutions that work.
-            <br />
-            🔹 I don&apos;t just fix problems — I prevent them. I build systems designed for scale, security, and long-term success.
-            <br />
-            <br />
-            <span className='font-semibold'>📌 Let&apos;s Talk</span>
-            <br />
-            If your product needs fixing, scaling, or building from the ground up, let&apos;s connect.
-            <br />
-            <a href='#contact' className='text-primary hover:underline'>
-              ✅ Get in Touch
-            </a>
-          </motion.p>
+            I&apos;m Omar El Hedfi — I build secure, scalable web solutions and automate the pipelines behind them.
+</strong>
+<br />
+<br />I work full-stack, DevSecOps, and fast. Mostly with{' '}
+<strong>Next.js, React, TypeScript, Docker, Kubernetes, Jenkins</strong>, and
+whatever else it takes to deliver production-ready solutions. <br />
+<br />
+Some teams hire me to build from scratch. Others bring me in when{' '}
+<strong>
+  CI/CD pipelines fail, deployments break, security scans explode, or apps need AI-powered features
+</strong>{' '}
+to stay ahead. <br />
+<br />
+Either way, I make it clean, secure, and built to last.
+<br />
+<br />
+<span className='font-semibold'>📌 What I Do Best:</span>
+<br />✅ <strong>Build Secure Pipelines</strong> – CI/CD with Jenkins, Trivy, SonarQube, Hadolint, Dockle.
+<br />✅ <strong>DevSecOps Automation</strong> – Docker/Kubernetes deployments, GitHub Actions, security-first workflows.
+<br />✅ <strong>AI Integration</strong> – LLaMA, Gemini, OpenAI features like auto-report summaries and smart chat.
+<br />✅ <strong>Full Stack Development</strong> – Next.js, React, TypeScript, REST APIs.
+<br />✅ <strong>Performance Optimization</strong> – Faster builds, scalable infrastructure, clean architecture.
+<br />
+<br />
+<span className='font-semibold'>📌 Why Work With Me?</span>
+<br />
+🔹 I combine development with **security and automation**—your apps run fast, scale safely, and pass audits.
+<br />
+🔹 I work efficiently—no endless loops, just working solutions.
+<br />
+🔹 I prevent future issues—everything is built to be **maintainable and future-proof**.
+<br />
+<br />
+<span className='font-semibold'>📌 Let&apos;s Talk</span>
+<br />
+If you need **a secure pipeline, a scalable app, or AI-driven features**, let&apos;s connect.
+<br />
+<a href='#contact' className='text-primary hover:underline'>
+  ✅ Get in Touch
+</a>
+
+ </motion.p>
         </div>
       </div>
     </div>
